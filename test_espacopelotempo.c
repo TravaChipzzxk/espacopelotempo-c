@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "function_espacopelotempo.c"
 
-int calculo_de_espaco(int v, int t, int tem_aceleracao, int a);
+int calculo_de_espaco(int velo, int tempo, int tem_aceleracao, int a);
 
 int main(int argc, char *argv[]) {
     int velo, tempo, opc, a, resultado;
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
         scanf("%d", &a);
     }
     
-    resultado = calculo_de_espaco(v, t, opc, a);
+    resultado = calculo_de_espaco(velo, tempo, opc, a);
     printf("A distancia percorrida será dê: %d\n", resultado);
     
     printf("Criado por Allyson Rodolfo da Silva (https://github.com/TravaChipzzxk)\n");
